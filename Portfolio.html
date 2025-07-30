@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Karthik Chava | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Google Fonts (optional for better look) -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
+  <style>
+    body {
+      background: #f5f6fa;
+      margin: 0;
+      font-family: 'Roboto', Arial, sans-serif;
+      color: #19294d;
+    }
+    nav {
+      background: #23487d;
+      padding: 0.6em 0;
+      text-align: center;
+      position: sticky;
+      top: 0; z-index: 100;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 18px;
+      font-weight: 500;
+      font-size: 1em;
+      letter-spacing: 1px;
+      transition: color .2s;
+    }
+    nav a:hover { color: #e86a17; }
+    .container {
+      max-width: 950px;
+      margin: 32px auto;
+      background: #fff;
+      padding: 36px 26px;
+      border-radius: 18px;
+      box-shadow: 0 6px 18px #0001;
+    }
+    header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 28px;
+    }
+    .avatar {
+      border-radius: 50%;
+      width: 105px;
+      aspect-ratio: 1;
+      border: 3px solid #387cf7;
+      box-shadow: 0 2px 16px #387cf726;
+      background: linear-gradient(135deg, #cfdffb 0%, #e8eafd 100%);
+      object-fit: cover;
+    }
+    .info {
+      flex: 1;
+    }
+    .title {
+      font-size: 2.2em;
+      color: #23487d;
+      font-weight: bold;
+      margin: 0 0 4px;
+    }
+    .subtitle {
+      color: #387cf7;
+      font-size: 1.09em;
+      margin: 0 0 10px;
+      font-weight: 500;
+      letter-spacing: 1px;
+    }
+    .contact-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px 34px;
+      margin-top: 10px;
+      background: #e6f2fe;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-size: 0.98em;
+    }
+    .contact-bar b { color: #025ad9; }
+    section {
+      margin: 38px 0 0 0;
+    }
+    section h2 {
+      color: #387cf7;
+      text-transform: uppercase;
+      font-size: 1.37em;
+      border-bottom: 2px dotted #dbeaff;
+      padding-bottom: 5px;
+      margin-bottom: 18px;
+    }
+    .about {
+      font-size: 1.08em;
+      margin-top: 3px;
+      line-height: 1.7;
+    }
+    .skills-table { width: 100%; border-collapse: collapse; }
+    .skills-table th, .skills-table td {
+      padding: 5px 9px;
+      text-align: left;
+      font-size: 1em;
+    }
+    .skills-table th { color: #387cf7; width: 165px; }
+    .projects-list, .exp-list, .edu-list, .cert-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .projects-list li, .exp-list li, .edu-list li, .cert-list li {
+      margin-bottom: 21px;
+      background: #f5f8ff;
+      border-left: 3px solid #387cf7;
+      padding: 12px 18px 10px 18px;
+      border-radius: 8px;
+      box-shadow: 0 1px 8px #387cf722;
+    }
+    .projects-list li strong, .exp-list li strong, .edu-list li strong { font-size: 1.08em; }
+    .projects-list ul, .exp-list ul { margin-top: 7px; margin-left: 21px; }
+    a { color: #3273ba; text-decoration: none; }
+    a:hover { text-decoration: underline; color: #e86a17; }
+    @media (max-width: 700px) {
+      .container { padding: 7vw 4vw; }
+      header { flex-direction: column; align-items: flex-start; }
+      .avatar { width: 88px; }
+      .contact-bar { font-size: 0.99em; gap: 14px 0; flex-direction: column; padding: 10px; }
+      nav { font-size: 0.97em; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="container">
+    <header>
+      <!-- You can replace the below image link with your real photo or avatar -->
+      <img src="https://i.imgur.com/EjZgvdQ.png" class="avatar" alt="Karthik Chava Photo">
+      <div class="info">
+        <div class="title">Karthik Chava</div>
+        <div class="subtitle">B. Tech, CSE Student | IOT Club Member | Tech Enthusiast</div>
+        <div class="contact-bar" id="contact">
+          <div><b>Email:</b> <a href="mailto:chavakarthik06@gmail.com">chavakarthik06@gmail.com</a></div>
+          <div><b>Phone:</b> +91 8074265070</div>
+          <div><b>LinkedIn:</b> <a href="https://linkedin.com/in/karthik-chava" target="_blank">karthik-chava</a></div>
+          <div><b>GitHub:</b> <a href="https://github.com/Karthik-06-ch" target="_blank">Karthik-06-ch</a></div>
+          <div><b>Languages:</b> English, Hindi, Telugu</div>
+          <div><b>Location:</b> Hyderabad, India</div>
+        </div>
+      </div>
+    </header>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p class="about">
+        I'm a passionate computer science undergraduate with hands-on experience in IoT, AI, and software development.
+        I thrive at the intersection of <b>coding, electronics, and cloud technologies</b>, and love leading team initiatives, workshops, and mentoring. 
+        My projects blend innovation and practical impact — from AI-powered face recognition systems to real-time race analytics.
+        Always exploring and learning, I'm eager to apply my skills to solve real-world problems and collaborate on meaningful tech projects.
+      </p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <table class="skills-table">
+        <tr>
+          <th>Programming</th>
+          <td>
+            <b>Advanced:</b> Python<br>
+            <b>Intermediate:</b> C, Java<br>
+            <b>Novice:</b> HTML, CSS, PL/SQL
+          </td>
+        </tr>
+        <tr>
+          <th>Databases & Tools</th>
+          <td>SQL, MongoDB, PostgreSQL, AWS Services, PL/SQL, Git, Arduino</td>
+        </tr>
+        <tr>
+          <th>Tech & Interests</th>
+          <td>IOT Development, Front-end (HTML, CSS), Cloud (AWS), Exploring new technologies</td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul class="projects-list">
+        <li>
+          <strong>
+            <a href="https://github.com/Ai-facial-attendance-system" target="_blank">Face Recognition Attendance System</a>
+          </strong> <span style="font-size:.93em;color:#555;">(Python, ML)</span>
+          <ul>
+            <li>Developed an AI attendance system (95% accuracy), reducing manual attendance time by 50%.</li>
+            <li>Implemented KNN for real-time classification; dashboard with Streamlit for tracking & visualization.</li>
+            <li>Used SQLite & CSV for automated, reliable data storage.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>
+            <a href="https://github.com/F1-Race-analysis-tool" target="_blank">Formula One Lap Time Analysis</a>
+          </strong> <span style="font-size:.93em;color:#555;">(Python, Pandas, NumPy, Matplotlib)</span>
+          <ul>
+            <li>Telemetry tool for visualizing race data & lap benchmarking, automating data ingestion and anomaly detection.</li>
+            <li>Reduced manual errors by 70%; optimized multi-threaded processing to double efficiency.</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <ul class="exp-list">
+        <li>
+          <strong>IOT Club Member | Technical Team</strong> (Aug 2024 – Present)
+          <ul>
+            <li>Led workshops on IoT basics for 50+ students and coordinated with the Drone Club on tech integration.</li>
+            <li>Mentored 20+ coding beginners; organized multiple tech initiatives and programming sessions.</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <ul class="edu-list">
+        <li>
+          <strong>B. Tech, Computer Science</strong> (2023–27) <br>
+          Anurag University, Hyderabad <br>
+          <b>CGPA:</b> 8.8
+        </li>
+        <li>
+          <strong>Intermediate, MPC</strong> (2021–23) <br>
+          Sri Chaitanya Junior College, Hyderabad <br>
+          <b>Percentage:</b> 89.8%
+        </li>
+        <li>
+          <strong>CBSE (Class X)</strong> (2020–21) <br>
+          Takshasila Public School, Hyderabad <br>
+          <b>Percentage:</b> 90.4%
+        </li>
+      </ul>
+    </section>
+
+    <section id="achievements">
+      <h2>Achievements & Certifications</h2>
+      <ul class="cert-list">
+        <li>Python (Basic) Certification – HackerRank</li>
+        <li>NPTEL Certification in Database Management System</li>
+        <li>IIT Madras – Foundational Degree in Data Science</li>
+      </ul>
+    </section>
+  </div>
+</body>
+</html>
